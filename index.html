@@ -20,6 +20,7 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
 
 </head>
 
@@ -140,64 +141,100 @@
         <div class="col-lg-6">
           <a class="portfolio-item" data-toggle="modal" data-target="#project1">
             <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
+              <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Learning Edge Portal</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
                   <div class="modal-body">
-                    ...
+                    <span id="modal-bold">SUMMARY</span>
+                    A web portal built for a small business.
+                    <br>
+                    Learning Edge Enrichment Center is a business located in South Pasadena, CA that provides afterschool services to students.
+                    <br>
+                    The portal was created to convert the registration of students to online and maintain a registery of students and classes available.
+                    <br>
+                    <span id="modal-bold">TECH</span>
+                    <br>
+                    Angular framework used with Express and MongoDB as the back-end.
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <input class="btn btn-primary" type="button" onclick="window.open('http://www.learningedgecenter.com','_blank');" value="Visit Site">
+                    <input class="btn btn-secondary" type="button" onclick="window.open('https://imgur.com/a/M67H5cs','_blank');" value="View Screenshots">
                   </div>
                 </div>
               </div>
             </div>
             <span class="caption">
               <span class="caption-content">
-                <h2>Stationary</h2>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                <h2>Learning Egde</h2>
+                <p class="mb-0">Freelance job for a small business</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            <img class="img-fluid" src="img/le_site/le_site frontpage screencap.png" alt="" id="project1">
           </a>
         </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" data-toggle="modal" data-target="#project2">
+            <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hike Track Project</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <span id="modal-bold">SUMMARY</span>
+                    <br>
+                    A CRUD application for hiking enthusiasts to find and plan hiking trips with other users.
+                    <br>
+                    An API call is made to the REI Hiking Project Data API based on the users inputed location and receieves the latest trail information and conditions.
+                    <br>
+                    <span id="modal-bold">TECH</span>
+                    <br>
+                    Django framework with MySQL database
+                  </div>
+                  <div class="modal-footer">
+                    <input class="btn btn-primary" type="button" onclick="window.open('https://www.hikingproject.com/data','_blank');" value="REI Hiking Project API">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Hike Track</h2>
+                <p class="mb-0">My first project in Django/MySQL</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/hike_track/hike_track screencap.png" alt="">
+          </a>
+        </div>
+        <hr>
         <div class="col-lg-6">
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Ice Cream</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Strawberries</h2>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Workspace</h2>
+                <h2>4th Project</h2>
                 <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+            <img class="img-fluid" src="img/le_site/le_site user-tuition info.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Volunteer</h2>
+                <p class="mb-0">HustleNCode 2018 Hackathon</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/HustleNCode.jpg" alt="">
           </a>
         </div>
       </div>
@@ -228,21 +265,22 @@
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
           <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-facebook"></i>
+            <i class="icon-social-github"></i>
           </a>
         </li>
         <li class="list-inline-item">
           <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
           </a>
         </li>
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#">
-            <i class="icon-social-github"></i>
+          <a class="social-link rounded-circle text-white" onclick="window.open('https://drive.google.com/file/d/16l0ubvNXiFDoDI3X-vaOElil5H0azqQJ/view','_blank');">
+            <i class="fas fa-file"></i>
           </a>
         </li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2019</p>
+      <!-- <p class="text-muted small mb-0">Copyright &copy; Your Website 2019</p> -->
+      <h6>213-268-0130</h6>
     </div>
   </footer>
 
