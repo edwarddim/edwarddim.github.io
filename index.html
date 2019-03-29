@@ -53,8 +53,8 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">Edward Im</h1>
-      <h3 class="mb-5">
+      <h1 class="mb-1 text-warning">Edward Im</h1>
+      <h3 class="mb-5 text-warning">
         <em>Full Stack Web Developer</em>
       </h3>
       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About Me</a>
@@ -151,6 +151,7 @@
                   </div>
                   <div class="modal-body">
                     <span id="modal-bold">SUMMARY</span>
+                    <br>
                     A web portal built for a small business.
                     <br>
                     Learning Edge Enrichment Center is a business located in South Pasadena, CA that provides afterschool services to students.
@@ -216,18 +217,67 @@
         </div>
         <hr>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
+          <a class="portfolio-item" data-toggle="modal" data-target="#project3">
+            <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Learning Edge Portal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <span id="modal-bold">SUMMARY</span>
+                    <br>
+                    An open source project created by HackFoLA
+                    <br>
+                    Currently in BETA, HelloGov allows users to spread knowledge about legislative bills that needs attention.
+                    <br>
+                    The platform also takes advantage of an API that returns the contact information of your congressmen allowing for an easy way to voice your opinion.
+                    <br>
+                    <span id="modal-bold">TECH</span>
+                    <br>
+                    Angular framework used with Express and MongoDB as the back-end.
+                  </div>
+                  <div class="modal-footer">
+                    <input class="btn btn-primary" type="button" onclick="window.open('https://github.com/helloGov/webapp','_blank');" value="Visit Github">
+                    <input class="btn btn-secondary" type="button" onclick="window.open('https://imgur.com/a/QRnEzFz','_blank');" value="View Screenshots">
+                  </div>
+                </div>
+              </div>
+            </div>
             <span class="caption">
               <span class="caption-content">
-                <h2>4th Project</h2>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                <h2>HelloGov</h2>
+                <p class="mb-0">An open source project designed to create more interest in senate and congress bills</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/le_site/le_site user-tuition info.png" alt="">
+            <img class="img-fluid" src="img/hellogov/hellogov-login.png" alt="">
           </a>
         </div>
         <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
+          <a class="portfolio-item" data-toggle="modal" data-target="#project4">
+            <div class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">HustleNCode 2018</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <span id="modal-bold">SUMMARY</span>
+                    <br>
+                    Participated as a volunteer developer and advised a group of students during the hackathon.
+                    <br>
+                    HustleNCode’s goal is to use technology to help those in low income housing development sites and the hackathon is a chance for developers to volunteer and share their knowledge with under privileged kids.
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
             <span class="caption">
               <span class="caption-content">
                 <h2>Volunteer</h2>
